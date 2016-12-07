@@ -50,18 +50,4 @@ public class AppTest {
         day.setCurrentTime(LocalTime.of(0, 00));
         assertEquals(App.getGreeting(day, locale), "Доброй ночи, Мир!");
     }
-
-    @Test
-    public void getGreetingUkTest(){
-        Locale locale=new Locale("uk","UA");
-        Day day=new Day();
-        day.setCurrentTime(LocalTime.of(6, 30));
-        assertEquals(App.getGreeting(day, locale), "Доброе утро, Мир!");
-        day.setCurrentTime(LocalTime.of(18, 30));
-        assertEquals(App.getGreeting(day, locale), "Добрый день, Мир!");
-        day.setCurrentTime(LocalTime.of(19, 30));
-        assertEquals(App.getGreeting(day, locale), "Добрый вечер, Мир!");
-        day.setCurrentTime(LocalTime.of(0, 00));
-        assertEquals(App.getGreeting(day, locale), "Доброй ночи, Мир!");
-    }
 }
