@@ -1,2 +1,4 @@
 language: java
+dk:
+  - oraclejdk8
 script: mvn package
