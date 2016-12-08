@@ -19,14 +19,14 @@ public class AppTest {
     @Test
     public void appTest(){
         Locale currentLocale=Locale.getDefault();
-        ResourceBundle rb = ResourceBundle.getBundle("greeting.MessagesResource", currentLocale);
+        ResourceBundle rb = ResourceBundle.getBundle("MessagesResource", currentLocale);
         System.out.println(currentLocale.getCountry()+" - "+currentLocale.getDisplayLanguage());
         System.out.println(rb.getString("day"));
     }
 
     @Test
     public void getGreetingEngTest(){
-        Locale locale=Locale.ENGLISH;//new Locale("en","US")
+        Locale locale=Locale.ENGLISH;
         Day day=new Day();
         day.setCurrentTime(LocalTime.of(6, 30));
         assertEquals(App.getGreeting(day, locale), "Good morning, World!");

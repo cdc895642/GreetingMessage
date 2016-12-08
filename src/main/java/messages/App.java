@@ -27,7 +27,7 @@ public class App {
     }
 
     public static String getGreeting(Day day, Locale locale){
-        ResourceBundle rb = ResourceBundle.getBundle("greeting.MessagesResource", locale);
+        ResourceBundle rb = ResourceBundle.getBundle("MessagesResource", locale);
         logger.debug("getGreeting() - locale - "+locale.getDisplayLanguage());
         String greeting=rb.getString(day.getDayPeriod().toString());
         logger.debug("getGreeting() - greeting - "+greeting);
