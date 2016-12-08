@@ -3,6 +3,7 @@ package greeting;
 import org.junit.Test;
 
 import java.util.Enumeration;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 import static org.junit.Assert.*;
@@ -12,7 +13,7 @@ import static org.junit.Assert.*;
  * Created by cdc89 on 07.12.2016.
  */
 public class MessageResourcesTest {
-    ResourceBundle messagesResource=new MessagesResource();
+    ResourceBundle messagesResource=ResourceBundle.getBundle("MessagesResource", new Locale("en","EN"));
 
     @Test
     public void handleGetObjectTest(){

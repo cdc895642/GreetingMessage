@@ -10,9 +10,12 @@ import java.util.Hashtable;
 import java.util.ResourceBundle;
 
 /**
+ * don't use.
+ * if need add new lang - use properties files
  * default english messages
  * Created by cdc89 on 07.12.2016.
  */
+@Deprecated
 public class MessagesResource  extends ResourceBundle {
     private static final Logger logger = LogManager.getLogger(MessagesResource.class.getName());
     protected Hashtable<String, String> messages;

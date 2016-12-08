@@ -4,9 +4,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
+ * don't use.
+ * if need add new lang - use properties files
  * russian messages
  * Created by cdc89 on 07.12.2016.
  */
+@Deprecated
 public class MessagesResource_ru extends MessagesResource{
     private static final Logger logger = LogManager.getLogger(MessagesResource_ru.class.getName());
     @Override

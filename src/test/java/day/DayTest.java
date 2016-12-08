@@ -1,5 +1,6 @@
 package day;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.time.LocalTime;
@@ -13,6 +14,7 @@ import static org.junit.Assert.assertNotEquals;
 public class DayTest {
     Day day = new Day();
 
+    @Ignore
     @Test
     public void testCurrentTime() {
         LocalTime currentTime = LocalTime.now();
