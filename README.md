@@ -3,4 +3,4 @@
 
 Greeting message depending on locale.
 
-Properties files for greeting are stored into src/main/resources
+Properties files for greeting are stored in src/main/resources
